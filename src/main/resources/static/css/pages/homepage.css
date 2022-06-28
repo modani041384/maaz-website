@@ -1,0 +1,450 @@
+@import url(../component/variables.css);
+@import url(../component/_select.css);
+@import url(../component/logo.css);
+@import url(../component/button.css);
+@import url(../component/article.css);
+@import url(../component/header.css);
+@import url(../component/contact-us.css);
+
+/* Top banner */
+.banner-text {
+    padding: 0 var(--section-padding);
+}
+
+.banner-text  .slogan {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--color4);
+    margin: 1rem 0;
+}
+
+.title {
+    background: linear-gradient(177.46deg, #FFFFFF 57.51%, #AFAFAF 87.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.introduction {
+    position: relative;
+    background: radial-gradient(100% 100% at 48.86% 100%, #000913 42.46%, #242424 67.19%, #000913 100%);
+    padding: var(--section-padding);
+}
+
+.introduction .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem var(--svg-padding);
+}
+
+.introduction .logo {
+    height: 44px;
+}
+
+/* What sets us apart */
+.sets-us-apart {
+    background: radial-gradient(100% 100% at 48.68% 100%, #040A10 0.19%, #000913 22.4%, #000913 53.12%, #1A1D20 76.04%, #000913 100%);
+    padding: 5rem var(--section-padding);
+    position: relative;
+}
+
+.sets-us-apart .title {
+    margin-bottom: 5rem;
+}
+
+.sets-us-apart .description {
+    margin-bottom: 2rem;
+}
+
+.sets-us-apart ul li {
+    margin-bottom: 1rem;
+}
+
+.sets-us-apart .icon {
+    height: 35px;
+}
+
+.sets-us-apart .hr-end {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sets-us-apart .hr-end.part-1 {
+    width: 27.5rem;
+    max-width: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 51.16%, rgba(255, 255, 255, 0) 100%);
+}
+
+.sets-us-apart .hr-end.part-2 {
+    width: 10rem;
+    height: 4px;
+    max-width: 50%;
+    border-radius: 4px 4px 0 0;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 12px rgba(255, 255, 255, 0.5);
+}
+
+.slash-bullet {
+    position: relative;
+    height: 24px;
+    width: 20px;
+    margin-right: 0.625rem;
+}
+
+.slash-bullet::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 6px;
+    transform: translate(-100%, -50%) skewX(-45deg);
+    background: linear-gradient(177.46deg, #FFFFFF 57.51%, #AFAFAF 87.85%);
+}
+
+.slash-bullet::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 6px;
+    transform: translate(100%, -50%) skewX(-45deg);
+    background: linear-gradient(177.46deg, #FFFFFF 57.51%, #AFAFAF 87.85%);
+    opacity: 0.4;
+}
+
+li.flex .content {
+    flex: 1;
+}
+
+/* Testimonials */
+.parter-logo {
+    width: 250px;
+}
+
+.testimonials {
+    background-color: var(--bg);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5rem;
+    padding-bottom: 6.5rem;
+}
+
+.testimonials .thumb-swiper {
+    width: 100%;
+    padding: 2rem var(--section-padding);
+    background: rgba(255, 255, 255, 0.05);
+    opacity: 0.6;
+}
+
+.testimonials .title {
+    margin-bottom: 2rem;
+}
+
+.testimonials .swiper img {
+    height: 34px;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials .main-swiper {
+    width: calc(100% + 8rem);
+    margin: 0 -4rem;
+    --swiper-navigation-size: 0.5rem;
+}
+
+.testimonial {
+    padding: 1.5rem 1rem;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-weight: 900;
+}
+
+.main-swiper .swiper-button-prev {
+    left: calc(4rem + var(--section-padding));
+}
+.main-swiper .swiper-button-next {
+    left: unset;
+    right: calc(4rem + var(--section-padding));
+}
+
+.main-swiper .swiper-button-prev,
+.main-swiper .swiper-button-next {
+    padding: 1.25rem;
+    border-radius: 50%;
+    background: var(--text-color);
+}
+
+.main-swiper .swiper-slide-active {
+    background: linear-gradient(204.13deg, rgba(210, 210, 210, 0.6) 16.07%, rgba(116, 116, 116, 0) 85.68%);
+    padding: 1px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+.main-swiper .swiper-slide-active .testimonial {
+    background: rgba(0, 0, 0);
+    border-radius: 0.75rem;
+}
+
+.main-swiper .swiper-slide-next .testimonial,
+.main-swiper .swiper-slide-prev .testimonial {
+    border-radius: 0.75rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.main-swiper .swiper-slide-next .testimonial .description,
+.main-swiper .swiper-slide-prev .testimonial .description {
+    
+    border-radius: 0.75rem;
+    background: linear-gradient(270deg, rgba(248, 249, 255, 0) 1.22%, #F8F9FF 49.22%, rgba(248, 249, 255, 0) 84.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main-swiper-prev::after, .main-swiper-next::after {
+    font-family: swiper-icons;
+    font-size: 1rem;
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+.main-swiper-prev::after {
+    content: 'prev';
+}
+
+.main-swiper-next::after {
+    content: 'next';
+}
+
+/* Section Products*/
+
+.section-products {
+    padding: 0 var(--section-padding);
+    margin-bottom: 4rem;
+}
+
+.section-products .products-introduction {
+    background: linear-gradient(rgba(65, 65, 65, 1) 0%, rgba(26, 26, 26, 1) 12.37%, #040A10 73.72%);
+    border-radius: 32px 32px 0px 0px;
+    padding: 3.5rem;
+}
+
+.section-products .products {
+    padding: 0 var(--product-padding);
+}
+
+/* Section Services */
+
+.section-service {
+    --padding-top: 3.5rem;
+    --padding-bottom: 2.5rem;
+    padding-top: var(--padding-top);
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+    padding-bottom: var(--padding-bottom);
+    position: relative;
+    background: radial-gradient(211.95% 135.47% at 48.86% 135.47%, #040A10 37.91%, #061829 63.7%, #061829 72.74%, #040A10 100%), #040A10;
+}
+
+.section-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: calc(1px + var(--padding-top));
+    padding-left: calc(1px + var(--section-padding));
+    padding-right: calc(1px + var(--section-padding));
+    padding-bottom: calc(1px + var(--padding-bottom));
+}
+.section-background-color {
+    width: calc(100% + 2px + var(--section-padding) + var(--section-padding));
+    height: calc(100% + 2px + var(--padding-top) + var(--padding-bottom));
+    border-radius: 32px 32px 0px 0px;
+    margin-top: calc(-1px - var(--padding-top));
+    margin-left: calc(-1px - var(--section-padding));
+    background: radial-gradient(211.95% 135.47% at 48.86% 135.47%, #040A10 37.91%, #061829 63.7%, #061829 72.74%, #040A10 100%), #040A10;
+}
+
+.section-service-wrapper {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 70.12%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+}
+
+.section-background-color-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.section-service .description {
+    color: var(--color3);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+.section-service-wrapper {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+.section-service .section-header {
+    padding-bottom: 3.5rem;
+}
+.section-service .services {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+}
+.section-service .services .service-header {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-service .services .service-header .separator {
+    height: 2px;
+    background: linear-gradient(90deg, rgba(77, 77, 77, 0) 0%, #FFFFFF 50.25%, rgba(77, 77, 77, 0) 100%);
+
+
+}
+.service-title img {
+    height: 2rem;
+}
+
+.service-list li {
+    margin-top: 2rem;
+}
+
+.section-service .services .service-header .service-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Section Regcognization Insights & View */
+
+.section-recognitions {
+    background: var(--bg);
+    padding: 5rem var(--section-padding);
+}
+.recognitions {
+    gap: 1.5rem;
+}
+
+.recognition {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    position: relative;
+    border-radius: 12px;
+    background: linear-gradient(204.13deg, rgba(243, 243, 243, 0.3) 16.07%, rgba(102, 102, 102, 0.18) 85.68%);    
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.recognition .background, .blog-preview .background {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--bg);
+}
+
+.recognition .background .background-color,
+.blog-preview .background .background-color  {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.recognition .background .background-color::before,
+.blog-preview .background .background-color::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(100% 100% at 4.32% 100%, #000000 30.93%, rgba(26, 26, 26, 0) 100%);
+    border-radius: 12px;
+}
+
+.recognition img {
+    height: 92px;
+}
+
+.recognition > *,
+.blog-preview > * {
+    position: relative;
+}
+
+.section-insights-news {
+    padding: 0 var(--section-padding) 5rem var(--section-padding);
+}
+
+.section-insights-news .title {
+    margin-bottom: 1.375rem;
+}
+
+.section-insights-news .subtitle {
+    margin-bottom: 2.5rem;
+}
+
+.section-insights-news .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.blog-preview {
+    position: relative;
+    border-radius: 12px;
+    background: linear-gradient(204.13deg, rgba(243, 243, 243, 0.3) 16.07%, rgba(102, 102, 102, 0.18) 85.68%);    
+    overflow: hidden;
+    padding: 1px;
+}
+
+.blog-preview  .blog-image {
+    overflow: hidden;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.blog-preview  .blog-content {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-preview  .blog-content .blog-type {
+    margin-bottom: 1.375rem;
+    font-weight: 700;
+}
+.blog-preview  .blog-content .blog-type.news {
+    color: var(--news-color);
+}
+.blog-preview  .blog-content .blog-type.blogs {
+    color: var(--blogs-color);
+}

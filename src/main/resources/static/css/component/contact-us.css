@@ -1,0 +1,42 @@
+/* Section contact us*/
+
+.section.section-contact-us {
+    position: relative;
+    overflow: hidden;
+    padding: 4rem;
+    background: radial-gradient(100% 100% at 48.86% 100%, #040A10 37.91%, #262626 63.7%, #242424 72.74%, #040A10 100%), #0F163D;
+}
+
+.section.section-contact-us .background {
+    position: absolute;
+    width: 1494px;
+    height: 870px;
+    left: calc(50% - 1494px/2);
+    top: calc(50% - 870px/2 - 38px - 4rem);
+    padding: calc(870px/2 + 38px - 12rem) calc(1494px/2 - 50%) calc(870px/2 - 38px - 18rem) calc(1494px/2 - 50%);
+    overflow: hidden;
+}
+
+.section.section-contact-us .content{
+    position: relative;
+}
+
+.section-contact-us .content .description {
+    margin-bottom: 1.5rem;
+}
+
+.section-contact-us .background .background-color-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section-contact-us .background .background-color {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section-contact-us img {
+    height: 20rem;
+}

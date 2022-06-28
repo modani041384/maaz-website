@@ -1,0 +1,29 @@
+.article-description {
+    margin-top: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+    .article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.5rem;
+        flex-direction: row-reverse;
+    }
+
+    .article:not(:last-child) {
+        margin-bottom: 3.5rem;
+    }
+
+    .article.img-left {
+        flex-direction: row;
+    }
+
+    .article .article-image {
+        flex: 0 0 50%;
+    }
+
+    .article .article-image iframe {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,21 @@
+
+:root {
+    /* Box */
+    --section-padding: 7.5rem;
+    --svg-padding: 12.375rem;
+    --product-padding: 6.5rem;
+    --news-main-radius: 1rem;
+
+    /* Colors */
+    --color1: #1A1A1A;
+    --color2: #4611a2;
+    --color3: #E6E6E6;
+    --bg: #040A10;
+    --text-color: #ffffff;
+    --color4: #F5FAFF;
+    --color5: #ffffff;
+    --news-color: #FFB905;
+    --blogs-color: #42C485;
+    --color6: #4D4D4D;
+    --color7: #333333;
+}

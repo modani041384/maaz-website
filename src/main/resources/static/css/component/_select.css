@@ -1,0 +1,111 @@
+@import url(variables.css);
+select, .select {
+    position: relative;
+    transition: 0.3s ease-in;
+}
+
+.select .menu-item {
+    padding: 1.25rem 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.select .menu-item .arrow-down {
+    margin-left: 0.25rem ;
+    display: none;
+}
+
+select.selected, .select.selected {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+select.selected::after, .select.selected::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 1.68%, 
+    rgba(255, 255, 255, 0.6) 23.7%, #FFFFFF 49.3%, 
+    rgba(255, 255, 255, 0.6) 73.37%, 
+    rgba(255, 255, 255, 0) 99.18%);
+}
+
+.select .submenu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.select .submenu-container .padding {
+    height: 1rem;
+    width: 100%;
+}
+.select.align-right .submenu-container {
+    left: auto;
+    right: 0;
+}
+.select .submenu-container {
+    display: none;
+}
+.select .submenu-container .select-submenu.level-2{
+    background: var(--bg);
+    border: 1px solid var(--color6);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 1.5rem 0;
+}
+
+.select:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.select.selected:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+} 
+
+.select:hover .submenu-container {
+    display: block;
+}
+
+.select-submenu.level-2 .submenu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    gap: 8px;
+    white-space: nowrap;
+    min-width: 276px;
+    transition: 0.3s ease-in;
+    background: var(--bg);
+}
+
+.select-submenu.level-2 .submenu-item:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.select-submenu.level-2 .submenu-item:hover  {
+    background: var(--color7);
+}
+
+.select-submenu.level-2 .submenu-item .arrow {
+    width: 0;
+    margin-right: 0;
+    height: 20px;
+    transition: .1s ease-out;
+    overflow: hidden;
+}
+.select-submenu.level-2 .submenu-item .arrow img {
+    width: 20px;
+    height: 20px;
+}
+
+.select-submenu.level-2 .submenu-item:hover .arrow{
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.submenu-container + .menu-item .arrow-down {
+    display: block;
+}
