@@ -1,4 +1,4 @@
-<div th:fragment="headDeclaration(pageTitle)">
+<div th:fragment="headDeclaration(page, pageTitle)">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,16 +6,17 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" th:href="|/css/pages/${page}.css|">
+        <script src="/js/stylesetup.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <link rel="stylesheet" th:href="/js/style.css">
-        <script th:src="@{/assets/js/stylesetup.js}"></script>
-        <script th:href="@{/assets/js/main.js}"></script>
+        <script src="/js/main.js"></script>
         <title th:text="${pageTitle}">Home</title>
     </head>
 </div>
 <div th:fragment="header(menuItems, currentPage)" th:with="menuItems = ${ {'Homepage', 'Products', 'Services', 'Resources', 'Company'} }">
-    <header th:with="menuLinks = ${ {'/products', '/service', '/resource.html', '/company'} }">
+    <header th:with="menuLinks = ${ {'/products', '/service', '/resources', '/company'} }">
         <div class="back-ground flex flex-row justify-between">
             <div class="logo">
                 <img src="/images/logo.png" alt="logo">
