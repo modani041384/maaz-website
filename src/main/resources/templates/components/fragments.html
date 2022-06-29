@@ -1,0 +1,112 @@
+<div th:fragment="headDeclaration(pageTitle)">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" th:href="/js/style.css">
+        <script th:src="@{/assets/js/stylesetup.js}"></script>
+        <script th:href="@{/assets/js/main.js}"></script>
+        <title th:text="${pageTitle}">Home</title>
+    </head>
+</div>
+<div th:fragment="header(menuItems, currentPage)" th:with="menuItems = ${ {'Homepage', 'Products', 'Services', 'Resources', 'Company'} }">
+    <header th:with="menuLinks = ${ {'/products', '/service', '/resource.html', '/company'} }">
+        <div class="back-ground flex flex-row justify-between">
+            <div class="logo">
+                <img src="/images/logo.png" alt="logo">
+            </div>
+            <div class="navigation">
+                <ul class="flex flex-row" th:each="item, stat : ${menuItems}">
+                    <li class="select" th:classappend="${currentPage == item ? 'selected' : ''}" >
+                        <a href="${menuLinks[stat.index]}" th:text="${item}"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div th:fragment="footer(menuItems)">
+    <footer class="section pb-4">
+        <div class="footer grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="infomation col-span-2 ">
+                <div class="logo"><img src="/images/logo.png" alt="logo"></div>
+                <div class="font-bold">
+                    MaaZ - MonoZukuri Adaptive AUTOSAR
+                </div>
+                <div class="address-part">
+                    <div class="font-bold">Head Quarter:</div>
+                    <div class="address whitespace-normal">FPT Tower, Pham Van Bach street, Cau Giay district, Hanoi, Vietnam</div>
+                </div>
+                <div class="tel-part">
+                    <span class="font-bold">Tel:</span>
+                    <a class="tel whitespace-normal ml-1" href="tel:+84 XXXXXXXX">+84 XXXXXXXX</a>
+                </div>
+                <div class="email-part">
+                    <span class="font-bold">Tel:</span>
+                    <a class="email whitespace-normal ml-1" href="mailto:fsoft@fpt.com.vn">fsoft@fpt.com.vn</a>
+                </div>
+                <div class="copyright mt-2">
+                    2022 (c) MaaZ - FPT Software. All Rights Reserved. 
+                </div>
+            </div>
+
+            <div class="products-list">
+                <div class="font-bold">Products</div>
+                <ul>
+                    <li>
+                        <a href="#">MaaZ Classic Platform</a>
+                    </li>
+                    <li>
+                        <a href="#">MaaZ Adaptive Platform</a>
+                    </li>
+                    <li>
+                        <a href="#">Flash bootloader</a>
+                    </li>
+                    <li>
+                        <a href="#">Test Automation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="services-list">
+                <div class="font-bold">Products</div>
+                <ul>
+                    <li><a href="#">AUTOSAR CLASSIC</a></li>
+                    <li><a href="#">AUTOSAR ADAPTIVE</a></li>
+                    <li><a href="#">Integrated Cockpit</a></li>
+                    <li><a href="#">ADAS & AD</a></li>
+                    <li><a href="#">Connected Car </a></li>
+                    <li><a href="#">EV </a></li>
+                    <li><a href="#">Car Amplifier</a></li>
+                    <li><a href="#">Powertrain</a></li>
+                    <li><a href="#">Body Electronics</a></li>
+                    <li><a href="#">FuSa</a></li>
+                    <li><a href="#">SECURITY</a></li>
+                    <li><a href="#">ASPICE Fulfillment</a></li>
+                </ul>
+            </div>
+            <div class="resource-list md:col-start-3 lg:col-start-5">
+                <div class="font-bold">Resources</div>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="resources/whitepaper.html">Whitepaper</a></li>
+                    <li><a href="#">Case Study</a></li>
+                </ul>   
+            </div>
+            <div class="company md:col-start-4 lg:col-start-6">
+                <div class="font-bold">Company</div>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>   
+            </div>
+        </div>
+    </footer>
+</div>
+

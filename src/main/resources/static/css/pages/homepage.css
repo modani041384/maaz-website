@@ -11,7 +11,7 @@
     padding: 0 var(--section-padding);
 }
 
-.banner-text  .slogan {
+.banner-text .slogan {
     font-size: 1.5rem;
     line-height: 2.25rem;
     color: var(--color4);
@@ -44,6 +44,8 @@
 .introduction .logo {
     height: 44px;
 }
+
+
 
 /* What sets us apart */
 .sets-us-apart {

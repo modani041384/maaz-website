@@ -1,0 +1,43 @@
+@import url(./variables.css);
+
+.pagination {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.page-item {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    padding: 0.5rem;
+    width: 2.25rem;
+    border-radius: 0.5rem;
+    display: block;
+    color: var(--color8);
+    font-weight: 700;
+    margin-right: 0.5rem;
+    transition: 0.3s ease-in;
+}
+
+.page-item .icon {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    display: block;
+    color: inherit;
+}
+
+.page-item.active {
+    background: var(--color5);
+    color: var(--color1);
+}
+
+.page-item.disabled {
+    color: var(--color6);
+}
+
+.page-item:not(.disabled):not(.active):hover {
+    background: var(--color6);
+    color: var(--color5);
+}
+  
