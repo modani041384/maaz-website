@@ -14,9 +14,20 @@ public class MaazWebController {
 
     @GetMapping(value = UrlPath.MAAZ_HOME)
     public String main(Model model, HttpSession session) {
-        //TODO
+        model.addAttribute("page", "homepage");
+        model.addAttribute("title", "Homepage");
         return "home"; //view
     }
 
+    @GetMapping(value = "resources")
+    public String resource(Model model, HttpSession session) {
+        return "resources"; //view
+    }
+
+    
+    @GetMapping(value = "resources/whitepaper")
+    public String whitepaper(Model model, HttpSession session) {
+        return "whitepaper"; //view
+    }
     //end
 }

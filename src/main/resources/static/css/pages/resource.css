@@ -123,6 +123,9 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+.news-type.technology {
+    color: var(--tech-color);
+}
 
 .news-header .secparator {
     margin: 0 0.5rem;
@@ -194,7 +197,7 @@
 }
 
 .rank-number {
-    color: var(--news-color);
+    color: var(--text-color);
     font-weight: 700;
     position: absolute;
     top: 50%;
@@ -214,8 +217,8 @@
 
 /* Social Tag*/
 .social-tags {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5rem;
 }
 
@@ -224,9 +227,11 @@
     padding: 1px;
     background: linear-gradient(204.13deg, rgba(210, 210, 210, 0.6) 16.07%, rgba(116, 116, 116, 0) 85.68%);
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .social-tag .background {
     position: absolute;
