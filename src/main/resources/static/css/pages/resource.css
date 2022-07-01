@@ -89,6 +89,8 @@
 }
 .news-preview-container.template1 > img{
     border-radius: var(--news-main-radius);
+    width: 100%;
+    min-height: 100%;
 }
 
 .news-preview-container.template1::after {
@@ -319,6 +321,10 @@
     background: var(--color1);
     border-radius: var(--news-main-radius);
     transition: 0.2s;
+}
+
+.section-suggestion .callout {
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 1024px) {
