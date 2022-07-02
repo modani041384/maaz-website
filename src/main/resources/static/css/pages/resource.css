@@ -7,58 +7,10 @@
 @import url(../component/contact-us.css);
 @import url(../component/pagination.css);
 @import url(../component/layout.css);
+@import url(../component/page-banner.css);
 
 .section {
     padding: 2rem var(--section-padding);
-    position: relative;
-}
-
-.banner-overlay {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 2px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(78, 151, 234, 0.3) 100%);
-}
-
-.gradient-border-wrapper .background {
-    background: #040A10;
-}
-.gradient-border-wrapper {
-    position: relative;
-}
-.gradient-border-wrapper .background-ovelay{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    background: linear-gradient(0deg, rgba(65, 65, 65, 0) 12.37%, rgba(26, 26, 26, 0.2) 73.72%, rgba(255, 255, 255, 0.2) 143.21%);
-}
-
-.section.section-title {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.section-title .title {
-    font-size: 3.75rem;
-    line-height: 4rem;
-    padding-top: 4.25rem;
-    padding-bottom: 2.75rem;
-}
-
-.parrent-page {
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 16px;
-    text-transform: uppercase;
-}
-
-.section-title .title-wrapper {
-    margin-top: -52px;
     position: relative;
 }
 
