@@ -6,6 +6,7 @@
 @import url(../component/header.css);
 @import url(../component/contact-us.css);
 @import url(../component/pagination.css);
+@import url(../component/layout.css);
 
 .section {
     padding: 2rem var(--section-padding);

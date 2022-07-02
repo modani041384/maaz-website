@@ -1,5 +1,9 @@
 @import url(/css/component/variables.css);
 @import url(/css/component/layout.css);
+
+.main-layout {
+    margin: 3rem 0 2.5rem 0
+}
 .back-button {
     display: flex;
     align-items: center;
@@ -13,10 +17,6 @@
 
 .back-button .text {
     flex: 1;
-}
-
-.details {
-    padding: 3rem var(--section-padding) 2.5rem var(--section-padding);
 }
 
 .details .news-type {
