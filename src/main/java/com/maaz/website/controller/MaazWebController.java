@@ -29,5 +29,16 @@ public class MaazWebController {
     public String whitepaper(Model model, HttpSession session) {
         return "whitepaper"; //view
     }
+
+    @GetMapping(value = "resources/details")
+    public String details(Model model, HttpSession session) {
+        return "blogdetails"; //view
+    }
+
+    @GetMapping(value = "resources/success-stories")
+    public String successStories(Model model, HttpSession session) {
+        return "success-stories"; //view
+    }
+    
     //end
 }

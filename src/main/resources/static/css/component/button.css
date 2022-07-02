@@ -64,3 +64,7 @@ button .button-text, .button .button-text, .btn .button-text {
     right: -51px;
     filter: blur(24px);
 }
+
+.button .icon {
+    font-size: 1.25rem;
+}

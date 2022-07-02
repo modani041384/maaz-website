@@ -1,0 +1,53 @@
+@import url(/css/component/variables.css);
+@import url(/css/component/icon.css);
+@import url(/css/component/button.css);
+@import url(/css/component/input.css);
+
+.section-content {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+.left-side.section-success-stories {
+    padding: 0 var(--section-padding);
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.label {
+    padding-right: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.value {
+    color: var(--color9);
+}
+
+.whitepaper-download-form-wrapper {
+    background: linear-gradient(199.51deg, rgba(210, 210, 210, 0.6) 55.2%, rgba(116, 116, 116, 0) 85.26%);
+    padding: 1px;
+    border-radius: 32px;
+}
+.whitepaper-download-form {
+    background: linear-gradient(0deg, rgba(65, 65, 65, 0) 12.37%, rgba(26, 26, 26, 0.2) 23.62%, rgba(255, 255, 255, 0.2) 143.21%), #040A10;
+    border-radius: 32px;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 2.75rem;
+}
+.whitepaper-download-form .text-title {
+    line-height: 3rem;
+    margin-bottom: 1.25rem;
+}
+
+.whitepaper-download-form .button {
+    margin-top: 0.75rem;
+}

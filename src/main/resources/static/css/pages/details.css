@@ -1,4 +1,5 @@
 @import url(/css/component/variables.css);
+@import url(/css/component/layout.css);
 .back-button {
     display: flex;
     align-items: center;
