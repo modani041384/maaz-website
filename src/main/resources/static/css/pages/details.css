@@ -1,5 +1,4 @@
-@import url(/css/component/variables.css);
-@import url(/css/component/layout.css);
+@import url(/css/pages/resource.css);
 
 .main-layout {
     margin: 3rem 0 2.5rem 0

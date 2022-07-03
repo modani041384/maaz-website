@@ -1,10 +1,4 @@
-@import url(../component/variables.css);
-@import url(../component/_select.css);
-@import url(../component/logo.css);
-@import url(../component/button.css);
-@import url(../component/article.css);
-@import url(../component/header.css);
-@import url(../component/contact-us.css);
+@import url(../component/components.css);
 
 /* Top banner */
 .banner-text {

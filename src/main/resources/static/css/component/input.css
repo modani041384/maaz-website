@@ -20,7 +20,9 @@
         var(--bg) calc(50% - 1px),
         var(--bg) 100%);
 }
-.form-field input {
+.form-field input, 
+.form-field textarea, 
+.form-field select {
     width: 100%;
     padding: calc(1rem + 1px) 1rem;
     border: 1px solid var(--color9);
@@ -34,20 +36,34 @@
     position: relative;
     background: transparent;
 }
-.form-field input:focus {
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
     outline: none;
 }
-.form-field input:placeholder-shown:focus ~ label{
+.form-field input:placeholder-shown:focus ~ label,
+.form-field textarea:placeholder-shown:focus ~ label{
     top: -0.825rem;
     left: 0.5rem;
     color: var(--color5);
     font-size: 0.9rem;
 }
 
-.form-field input:placeholder-shown ~ label {
+.form-field input:placeholder-shown ~ label,
+.form-field textarea:placeholder-shown ~ label {
     top: 0.825rem;
     left: 1rem;
     color: var(--color9);
     cursor: text;
     font-size: 1rem;
+}
+
+form {
+    overflow: auto;
+    padding-right: 4px;
+}
+
+form .submit-button {
+    position: sticky;
+    bottom: 0;
 }

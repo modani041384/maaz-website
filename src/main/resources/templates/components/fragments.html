@@ -16,24 +16,99 @@
         <title th:text="${pageTitle}">Home</title>
     </head>
 </div>
-<div th:fragment="header(menuItems, currentPage)" th:with="menuItems = ${ {'Homepage', 'Products', 'Services', 'Resources', 'Company'} }">
-    <header th:with="menuLinks = ${ {'/products', '/service', '/resources', '/company'} }">
-        <div class="back-ground flex flex-row justify-between">
-            <div class="logo">
-                <img src="/images/logo.png" alt="logo">
-            </div>
-            <div class="navigation">
-                <ul class="flex flex-row" th:each="item, stat : ${menuItems}">
-                    <li class="select" th:classappend="${currentPage == item ? 'selected' : ''}" >
-                        <a href="${menuLinks[stat.index]}" th:text="${item}"></a>
-                    </li>
-                </ul>
-            </div>
+<header th:fragment="header(currentPage)">
+    <div class="header-container">
+        <div class="logo">
+            <img src="/images/logo-white-horizontal.png" alt="logo">
         </div>
-    </header>
-</div>
+        <div class="navigation">
+            <ul class="flex flex-row">
+                <li class="select" th:classappend="${currentPage == 'Home' ? 'selected' : ''}">
+                    <a href="/home" class="menu-item flex">
+                        <span class="flex-1">Home</span>
+                        <span class="arrow-down">
+                            <img width="16" height="16" src="/images/arrow-down.png">
+                        </span>
+                    </a>
+                </li>
+                <li class="select" th:classappend="${currentPage == 'Product' ? 'selected' : ''}">
+                    <a href="/products" class="menu-item flex">
+                        <span class="flex-1">Products</span>
+                        <span class="arrow-down">
+                            <img width="16" height="16" src="/images/arrow-down.png">
+                        </span>
+                    </a>
+                </li>
+                <li class="select" th:classappend="${currentPage == 'Services' ? 'selected' : ''}">
+                    <a href="/services.html" class="menu-item flex">
+                        <span class="flex-1">Services</span>
+                        <span class="arrow-down">
+                            <img width="16" height="16" src="/images/arrow-down.png">
+                        </span>
+                    </a>
+                </li>
+                <li class="select" th:classappend="${currentPage == 'Resources' ? 'selected' : '' }">
+                    <div class="submenu-container">
+                        <div class="padding"></div>
+                        <ul class="select-submenu level-2">
+                            <li class="submenu-item">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <a href="/resources/whitepaper">Whitepaper</a>
+                            </li>
+                            <li class="submenu-item">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <a href="/resources/success-stories">Success Stories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/resources" class="menu-item flex">
+                        <span class="flex-1">Resources</span>
+                        <span class="arrow-down">
+                            <img width="16" height="16" src="/images/arrow-down.png">
+                        </span>
+                    </a>
+                </li>
+                <li class="select align-right" th:classappend="${currentPage == 'Company' ? 'selected' : ''}">
+                    <div class="submenu-container">
+                        <div class="padding"></div>
+                        <div class="select-submenu level-2">
+                            <a class="submenu-item" href="/company/about-us">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <span>About Us</span>
+                            </a>
+                            <a class="submenu-item" href="/company/news">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <span>News</span>
+                            </a>
+                            <a class="submenu-item" href="/contact-us">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <span href="/contact-us">Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/company" class="menu-item flex">
+                        <span class="flex-1">Company</span>
+                        <span class="arrow-down">
+                            <img width="16" height="16" src="/images/arrow-down.png">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 
-<div th:fragment="footer(menuItems)">
+<div th:fragment="footer">
     <footer class="section pb-4">
         <div class="footer grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <div class="infomation col-span-2 ">
@@ -112,3 +187,93 @@
     </footer>
 </div>
 
+<div th:fragment="contact-us">
+    <div class="section section-contact-us">
+        <div class="svg-background-wrapper">
+            <div class="svg-background">
+            </div>
+        </div>
+    
+        <div class="content items-center grid grid-cols-2">
+            <div class="contact-us">
+                <div class="description font-bold mb-2 w-full text-center text-cu">
+                    Get started on your effortless<br>AUTOSAR journey!
+                </div>
+                
+                <div class="w-full text-center">
+                    <a href="/company/contact-us" class="button border-button inline-block button-contact-us">
+                        <div class="button-hover-background">
+                            <div class="ellipse1"></div>
+                            <div class="ellipse2"></div>
+                            <div class="ellipse3"></div>
+                        </div>
+                        <div class="button-text">
+                            Contact Us
+                        </div> 
+                    </a>
+                </div>
+                
+            </div>
+            <div class="image">
+                <img src="/images/contact-us-image.png" alt="contact-us">
+            </div>
+        </div>
+    
+        <div class="contact-us-modal modal">
+            <div class="overlay"></div>
+            <div class="gradient-border-wrapper content">
+                <button class="circle-button close-button">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+                <div class="content-details">
+                    <div class="left-side overflow-hidden h-full">
+                        <div class="project-name mb-2">MaaZ</div>
+                        <div class="form-title text-xl font-bold">
+                            Contact Us
+                        </div>
+                        <form action="" class="contact-us-form">
+                            <div class="grid grid-cols-2 h-full overflow-hidden flex-1 input-group-image">
+                                <div class="input-group overflow-auto custom-srollbar h-full pr-1">
+                                    <div class="form-field">
+                                        <input type="text" name="fullname" placeholder=" " aria-placeholder=" " id="fullname">
+                                        <label for="fullname">Full Name</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="email" name="email" placeholder=" " aria-placeholder=" " id="email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="location" placeholder=" " aria-placeholder=" " id="location">
+                                        <label for="location">Your Location</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="role" placeholder=" " aria-placeholder=" " id="role">
+                                        <label for="role">Your Role</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="company" placeholder=" " aria-placeholder=" " id="company">
+                                        <label for="company">Company Name</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <textarea name="bussiness" placeholder=" " aria-placeholder=" " id="bussiness"></textarea>
+                                        <label for="bussiness">Bussiness Needs</label>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="/images/contact-us-image.png" alt="contact-us">
+                                </div>
+                            </div>
+                            <button class="button mt-4">
+                                <div class="button-text">
+                                    Ask our experts
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

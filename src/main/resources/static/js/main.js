@@ -43,7 +43,27 @@ function configHover() {
     });
 }
 
+
+function contactUs() {
+    $('.button-contact-us').on('click', function (e) {
+        e.preventDefault();
+        $('.contact-us-modal').show();
+        $('body').css('overflow-y', 'hidden');
+    });
+    $('.contact-us-modal .close-button').on('click', function (e) {
+        e.preventDefault();
+        $('.contact-us-modal').hide();
+        $('body').css('overflow-y', '');
+    });
+    $('.contact-us-modal .overlay').on('click', function (e) {
+        e.preventDefault();
+        $('.contact-us-modal').hide();
+        $('body').css('overflow-y', '');
+    });
+}
+
 $(() => {
     configSwiper();
     configHover();
+    contactUs();
 });

@@ -1,0 +1,36 @@
+@import url(../component/components.css);
+.contact-us-container {
+    padding: 4rem 6.5rem;
+    align-items: center;
+}
+
+.contact-us-container .image-part {
+    margin-right: 4rem;
+}
+.contact-us-container .information {
+    margin-left: 4rem;
+}
+
+.contact-us-modal .content-details{
+    background: linear-gradient(0deg, rgba(65, 65, 65, 0) 12.37%, rgba(26, 26, 26, 0.2) 73.72%, rgba(255, 255, 255, 0.2) 143.21%), #040A10;
+    width: 100%;
+    height: 100%;
+    padding: 2.25rem 6.5rem;
+    max-height: calc(100vh - 8rem);
+    overflow: hidden;
+}
+
+.left-side {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    max-height: calc(100vh - 8rem - 5.5rem);
+}
+
+.project-name {
+    color: var(--color9);
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+}

@@ -1,8 +1,4 @@
-@import url(/css/component/variables.css);
-@import url(/css/component/icon.css);
-@import url(/css/component/button.css);
-@import url(/css/component/input.css);
-
+@import url(../pages/details.css);
 .section-content {
     padding-top: 3rem;
     padding-bottom: 2.5rem;

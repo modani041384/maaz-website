@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration(${page}, ${title})"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Company')"> </header>
+    <div class="main">
+        <div th:replace="components/fragments :: contact-us"> </div>   
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>

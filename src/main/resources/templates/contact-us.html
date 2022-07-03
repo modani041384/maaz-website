@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('contact-us', 'About us')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Company')"> </header>
+    <div class="main">
+        
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/whitepaper-banner.png" class="w-full" />
+            </div>
+            <div class="banner-title text-lg">
+                MaaZ is here to accompany your AUTOSAR transsformation
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper"> 
+                <div class="content">
+                    <div class="contact-us-container grid grid-cols-2">
+                        <div class="image-part">
+                            <img src="/images/contact-us.png" alt="">
+                        </div>
+                        <div class="information">
+                            <div class="text-title mb-4 font-bold">
+                                Head Quaters
+                            </div>
+                            <div class="address mb-4 text-color3">
+                                FPT Tower, No.10 Pham Van Bach street, Dich Vong Ward, Cau Giay District, Hanoi City, Vietnam
+                            </div>
+                            <div class="flex mb-2">
+                                <span class="mr-6 font-bold">Tel.:</span>
+                                <span class="flex-1 text-color3">+84 (24) 3 768 9048</span>
+                            </div>
+                            <div class="flex mb-2">
+                                <span class="mr-6 font-bold">Fax.:</span>
+                                <span class="flex-1 text-color3">+84 (24) 3 768 9049</span>
+                            </div>
+                            <div class="flex mb-2">
+                                <span class="mr-6 font-bold">Email:</span>
+                                <span class="flex-1 text-color3">maaz@fsoft.com.vn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background">
+                </div>
+                <div class="background-ovelay"></div>
+               
+            </div>
+        </div>
+        <div th:replace="components/fragments :: contact-us"> </div>   
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>
