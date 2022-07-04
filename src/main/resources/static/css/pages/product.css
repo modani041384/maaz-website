@@ -1,0 +1,41 @@
+@import url(../component/components.css);
+
+.section {
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+}
+.tab-content {
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+    padding-top: 3.5rem;
+    text-align: center;
+}
+.tab-content .introduction {
+    text-align: center;
+}
+.tab-content .introduction,
+.tab-content .two-sides-content.product {
+    margin-bottom: 3.5rem;
+}
+
+.tab-content .two-sides-content.product .left-side {
+    margin-right: 0.75rem;
+}
+
+.tab-content .two-sides-content.product .right-side {
+    margin-left: 0.75rem;
+}
+.tab-content .two-sides-content.product .product-name {
+    margin-bottom: 0.5rem;
+}
+.tab-content .two-sides-content.product .product-description {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.tab-content .two-sides-content.product .button {
+    margin-top: 0.5rem;
+}
+
+.tab-content.product .product-image {
+    border: 0.75rem;
+}

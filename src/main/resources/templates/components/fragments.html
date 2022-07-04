@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script src="/js/main.js"></script>
+        <script type="module" src="/js/main.js"></script>
         <title th:text="${pageTitle}">Home</title>
     </head>
 </div>
@@ -32,6 +32,35 @@
                     </a>
                 </li>
                 <li class="select" th:classappend="${currentPage == 'Product' ? 'selected' : ''}">
+                    <div class="submenu-container">
+                        <div class="padding"></div>
+                        <ul class="select-submenu level-2">
+                            <li class="submenu-item">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <a href="/products#classic-platform">Classic Platform</a>
+                            </li>
+                            <li class="submenu-item">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <a href="/products#adaptive-platform">Adaptive Platform</a>
+                            </li>
+                            <li class="submenu-item">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <a href="/products#flashbooloader">Flash Bootloader</a>
+                            </li>
+                            <li class="submenu-item">
+                                <div class="arrow">
+                                    <img src="/images/arrow-forward.png" alt="arrow-forward">
+                                </div>
+                                <a href="/products#test-automation">Test Automation</a>
+                            </li>
+                        </ul>
+                    </div>
                     <a href="/products" class="menu-item flex">
                         <span class="flex-1">Products</span>
                         <span class="arrow-down">

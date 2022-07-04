@@ -12,12 +12,16 @@
     margin: 1rem 0;
 }
 
-.title {
+.section-title, title {
     background: linear-gradient(177.46deg, #FFFFFF 57.51%, #AFAFAF 87.85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
 }
 
 .introduction {
@@ -33,6 +37,10 @@
     right: 0;
     bottom: 0;
     padding: 1rem var(--svg-padding);
+}
+
+.main .introduction {
+    margin-bottom: 0;
 }
 
 .introduction .logo {
@@ -131,7 +139,6 @@ li.flex .content {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    padding-top: 5rem;
     padding-bottom: 6.5rem;
 }
 
@@ -144,6 +151,7 @@ li.flex .content {
 
 .testimonials .title {
     margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 .testimonials .swiper img {
@@ -163,6 +171,7 @@ li.flex .content {
 
 .swiper-button-next:after, .swiper-button-prev:after {
     font-weight: 900;
+    transform: translateY(-50%);
 }
 
 .main-swiper .swiper-button-prev {

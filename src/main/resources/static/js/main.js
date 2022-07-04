@@ -1,3 +1,5 @@
+import { Init } from "./tab.js";
+
 function configSwiper(params) {
     const thumbSwiper = new Swiper('.thumb-swiper', {
         slidesPerView: 5,        
@@ -66,4 +68,12 @@ $(() => {
     configSwiper();
     configHover();
     contactUs();
+    const tabs = Init();
+    
+    let selectedTab = window.location.hash || '#';
+    tabs.forEach(tab => tab.active({ index: 0, name: selectedTab.replace('#', '') }));
+    $(window).on('hashchange', function () {
+        selectedTab = window.location.hash || '#';
+        tabs.forEach(tab => tab.active({ index: 0, name: selectedTab.replace('#', '') }));
+    });
 });
