@@ -12,7 +12,7 @@
     margin: 1rem 0;
 }
 
-.section-title, title {
+.section-title, .title {
     background: linear-gradient(177.46deg, #FFFFFF 57.51%, #AFAFAF 87.85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

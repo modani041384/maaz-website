@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('product', 'Classic Platform - Basic Software')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Company')"> </header>
+    <div class="main">
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/product-banner.png" class="w-full" />
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper">
+                <div class="background">
+                    <div class="title">
+                        <div class="w-full text-center parrent-page">Classic platform</div>
+                        <h1 class="text-xl text-center font-bold">Basic Software (BSW)</h1>
+                    </div>
+                </div>
+                <div class="background-ovelay"></div>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <div class="introduction pb-4">
+                <div class="image mb-10">
+                    <img src="/images/products/classic-platform-bsw-introduction.png" alt="classic platform bsw">
+                </div>
+                <div class="content mb-10 text-item">
+                    <p>
+                        MaaZ Basic Software provides a full AUTOSAR solution, including AUTOSAR R4-compliant basic software, taking security to the highest level with safety-critical ECUs. 
+                    </p>
+                    <br>
+                    <p>
+                        While adapting AUTOSAR, to maximize productivity and reusability, as well as to meet up with the demands of automobile manufacturers, the customers continuously build layers on the premise of software generalization. Nevertheless, these projects will require huge and expert technical resources. 
+                    </p>
+                </div>
+                <div class="content mb-10 text-item">
+                    <p>
+                        With our basic software solution for Classic Platform, MaaZ transforms how you adapt AUTOSAR. MaaZ divides the roles of the application layer and platform layer, utilizing legacy assets along with AUTOSAR modules.
+                    </p> 
+                    <p>
+                        We also conduct a computer-based risk assessment by Fit & Gap, architecture design, configuration, and skill transfer with the consideration of the derivative development or lateral deployment time, 
+                        which enhances the performance of the AUTOSAR transformation. 
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="lineup py-8">
+                <h2 class="text-title font-bold mb-4">MaaZ BSW lineup</h2>
+                <div class="grid grid-cols-2">
+                    <div class="card gradient-border mr-3">
+                        <div class="background" ></div>
+                        <div class="background-overlay"></div>
+                        <div class="content">
+                            <h3 class="text-cu mb-4 font-bold">MaaZ BSW 1.x</h3>
+                            <ul>
+                               <li class="flex items-start mb-1">
+                                <div class="slash-bullet"></div>
+                                <div class="flex-1">AUTOSAR R4.0 compliant</div>
+                               </li>
+                               <li class="flex items-start mb-1">
+                                <div class="slash-bullet"></div>
+                                <div class="flex-1">16bit/32bit microcontroller compatible</div>
+                               </li>
+                               <li class="flex items-start">
+                                <div class="slash-bullet"></div>
+                                <div class="flex-1">High-performance & lightweight</div>
+                               </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card gradient-border ml-3">
+                        <div class="background" ></div>
+                        <div class="background-overlay"></div>
+                        <div class="content">
+                            <h3 class="text-cu mb-4 font-bold">MaaZ BSW 2.x</h3>
+                            <ul>
+                                <li class="flex items-start mb-1">
+                                    <div class="slash-bullet"></div>
+                                    <div class="flex-1">AUTOSAR R4.2 compliant</div>
+                                </li>
+                                <li class="flex items-start mb-1">
+                                    <div class="slash-bullet"></div>
+                                    <div class="flex-1">Multi-core microcontroller compatible</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="slash-bullet"></div>
+                                    <div class="flex-1">High-speed communication supported</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="slash-bullet"></div>
+                                    <div class="flex-1">Security, functional safety ensured</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="os-lineup py-4">
+                <h2 class="text-title font-bold mb-4">Compatible OS lineup</h2>
+                <div class="card gradient-border mr-3">
+                    <div class="background" ></div>
+                    <div class="background-overlay"></div>
+                    <div class="content">
+                        <table class="w-full">
+                            <tr>
+                                <th class="text-left">
+                                    <h2 class="text-cu font-bold mb-4">Manufacturer</h2>
+                                </th>
+                                <th class="text-left">
+                                    <h2 class="text-cu font-bold mb-4">Model</h2>
+                                </th>
+                            </tr>
+                            <tr >
+                                <td class="pt-3 pb-4">Renesas Electronics</td>
+                                <td class="pt-3 pb-4">Renesas Electronics</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4">Infineon Technologies AG</td>
+                                <td class="py-4">Infineon Technologies AG</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4">NXP Semiconductors</td>
+                                <td class="py-4">NXP Semiconductors</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-lineup py-4">
+                <h2 class="text-title font-bold mb-4">MaaZ BSW module lineup</h2>
+                <div class="image">
+                    <img src="/images/products/module-lineup.png" alt="MaaZ BSW module lineup">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-advantage text-center">
+            <h1 class="text-lg gradient-text font-bold section-title">Our Advantages</h1>
+            <div class="advantages-list grid p-4">
+                <div class="advantage text-center">
+                    <div class="mb-4">
+                        <img src="/images/products/iso.svg" alt="ISO26262">
+                    </div>
+                    <div class="text-item font-bold mb-1">
+                        ISO26262
+                    </div>
+                    <div class="text-color8 mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                </div>
+                <div class="advantage text-center">
+                    <div class="mb-4">
+                        <img src="/images/products/seamlessly.svg" alt="Seamlessly Compatible">
+                    </div>
+                    <div class="text-item font-bold mb-1">
+                        Seamlessly Compatible
+                    </div>
+                    <div class="text-color8 mt-1">
+                        with ASIL D, 16bit/32bit, and multi-core microcontrollers
+                    </div>
+                </div>
+                <div class="advantage text-center">
+                    <div class="mb-4">
+                        <img src="/images/products/technology.svg" alt="Easily Customizable">
+                    </div>
+                    <div class="text-item font-bold mb-1">
+                        Easily Customizable
+                    </div>
+                    <div class="text-color8 mt-1">
+                        of AUTOSAR software, applicable yo your ECU and considering OEM-specific requirements
+                    </div>
+                </div>
+                <div class="advantage text-center">
+                    <div class="mb-4">
+                        <img src="/images/products/key.svg" alt="Turnkey Software">
+                    </div>
+                    <div class="text-item font-bold mb-1">
+                        Turnkey Software
+                    </div>
+                    <div class="text-color8 mt-1">
+                        Delivered as turnkey software- preconfigured for specific OEM requirements
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-support-service text-center">
+            <h1 class="text-lg gradient-text font-bold section-title">Exclusive support services</h1>
+            <div class="content text-item text-center py-4">
+                Leveraging a rich resource of 500+ AUTOSAR experts on a global scale, MaaZ provides support services for one-stop introduction and development environment construction, which makes AUTOSAR compatible with any product. 
+            </div>
+            <div class="py-4 image">
+                <img src="/images/products/classic-platform-bsw-support-services.png" alt="Exclusive support services">
+            </div>
+        </div>
+        <div th:replace="components/fragments :: contact-us"> </div>   
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>

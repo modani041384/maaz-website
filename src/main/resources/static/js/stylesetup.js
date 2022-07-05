@@ -10,6 +10,10 @@ $(() => {
                     color3: getComputedStyle(document.body ).getPropertyValue('--color3').trim(),
                     color4: getComputedStyle(document.body ).getPropertyValue('--color4').trim(),
                     color5: getComputedStyle(document.body ).getPropertyValue('--color5').trim(),
+                    color6: getComputedStyle(document.body ).getPropertyValue('--color6').trim(),
+                    color7: getComputedStyle(document.body ).getPropertyValue('--color7').trim(),
+                    color8: getComputedStyle(document.body ).getPropertyValue('--color8').trim(),
+                    color9: getComputedStyle(document.body ).getPropertyValue('--color9').trim(),
                 },
                 padding: {
                     'section': 'var(--padding-section)',
