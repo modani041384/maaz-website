@@ -40,5 +40,28 @@ public class MaazWebController {
         return "success-stories"; //view
     }
     
+    @GetMapping(value = "company/our-story")
+    public String ourStory(Model model, HttpSession session) {
+        return "our-story"; //view
+    }
+
+    @GetMapping(value = "company/contact-us")
+    public String contactUs(Model model, HttpSession session) {
+        return "contact-us"; //view
+    }
+
+    @GetMapping(value = "products")
+    public String product(Model model, HttpSession session) {
+        return "product"; //view
+    }
+    @GetMapping(value = "products/classic-platform/basic-software")
+    public String classicPlatformBSW(Model model, HttpSession session) {
+        return "products/classicplatform-bsw"; //view
+    }
+    
+    @GetMapping(value = "products/classic-platform/studio")
+    public String classicPlatformStudio(Model model, HttpSession session) {
+        return "products/classicplatform-studio"; //view
+    }
     //end
 }

@@ -119,6 +119,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    display: inline-block;
 }
 .section-advantage {
     padding-top: 2.5rem;
@@ -153,6 +154,20 @@
 .section-support-service {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    padding-left: calc(2 * var(--section-padding));
+    padding-right: calc(2 * var(--section-padding));
+}
+
+.section-key-features {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    align-items: center;
+    padding: 2.5rem var(--section-padding);
+}
+
+.section-architecture {
+    padding-top: 0;
+    padding-bottom: 5rem;
     padding-left: calc(2 * var(--section-padding));
     padding-right: calc(2 * var(--section-padding));
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('product', 'Classic Platform - Basic Software')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Company')"> </header>
+    <div class="main">
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/product-banner.png" class="w-full" />
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper">
+                <div class="background">
+                    <div class="title">
+                        <div class="w-full text-center parrent-page">Classic platform</div>
+                        <h1 class="text-xl text-center font-bold">Studio</h1>
+                    </div>
+                </div>
+                <div class="background-ovelay"></div>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <div class="introduction">
+                <div class="content text-item text-center py-4">
+                    MaaZ Classic Platform Studio provides customers with a comprehensive tool stack for AUTOSAR Classic, with “Configuration, Validation, Generation” as the key value. Our Classic Platform Studio improves your AUTOSAR efficiency, saves time and lowers total cost with easy-to-use tools and features:
+                </div>
+            </div>
+        </div>
+        <div class="section-key-features">
+            <div class="image">
+                <img src="/images/products/classic-platform-studio-key-features.png" alt="Classic Platform studio key features">
+            </div>
+            <div class="features-list ml-8">
+                <ul>
+                    <li class="flex items-start mb-1">
+                        <div class="slash-bullet"></div>
+                        <div class="flex-1 text-item">Based on AUTOSAR standard compliance: Support new AUTOSAR release.</div>
+                    </li>
+                    <li class="flex items-start mb-1">
+                        <div class="slash-bullet"></div>
+                        <div class="flex-1 text-item">User-friendly features. </div>
+                    </li>
+                    <li class="flex items-start mb-1">
+                        <div class="slash-bullet"></div>
+                        <div class="flex-1 text-item">Dynamic for seamless integration with development ecosystem, easy to expand or add more features (Eclipse Base).</div>
+                    </li>
+                    <li class="flex items-start mb-1">
+                        <div class="slash-bullet"></div>
+                        <div class="flex-1 text-item">Support multiple platform with “Configuration, Validation, Generation” features, accelerating microcontroller abstraction layer (MCAL) development. </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-architecture text-center">
+            <h2 class="text-lg gradient-text font-bold my-10">
+                MaaZ Architecture
+            </h2>
+            <div class="grid grid-cols-2 items-center mt-4">
+                <div class="image-left mr-8">
+                    <img src="/images/products/classic-platform-studio-architecture-1.png" alt="Classic Platform Studio Architecture">
+                </div>
+                <div class="image-right ml-8">
+                    <img src="/images/products/classic-platform-studio-architecture-2.png" alt="Classic Platform Studio Architecture">
+                </div>
+            </div>
+            <div class="description my-10 py-1 text-item">
+                MaaZ architecture is built based on the Eclipse ecosystem, covering the entire spectrum of AUTOSAR architecture. 
+            </div>
+            <ul class="text-left">
+                <li class="flex items-start mb-1">
+                    <div class="slash-bullet"></div>
+                    <div class="flex-1 text-item">Usable both from Eclipse IDE and command-line.</div>
+                </li>
+                <li class="flex items-start mb-1">
+                    <div class="slash-bullet"></div>
+                    <div class="flex-1 text-item">EMF as a common meta-model.</div>
+                </li>
+                <li class="flex items-start mb-1">
+                    <div class="slash-bullet"></div>
+                    <div class="flex-1 text-item">Transformations implemented using Xtend language.</div>
+                </li>
+                <li class="flex items-start mb-1">
+                    <div class="slash-bullet"></div>
+                    <div class="flex-1 text-item">Additional tools and frameworks: maven/Tycho, Junit.</div>
+                </li>
+                <li class="flex items-start mb-1">
+                    <div class="slash-bullet"></div>
+                    <div class="flex-1 text-item">Artop is available only to AUTOSAR members.</div>
+                </li>
+            </ul>
+        </div>
+        <div th:replace="components/fragments :: contact-us"> </div>   
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>
