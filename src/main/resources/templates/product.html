@@ -1,1 +1,191 @@
-=-0
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('product', 'Product')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Product')"> </header>
+    <div class="main">
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/product-banner.png" class="w-full" />
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper">
+                <div class="background">
+                    <div class="title">
+                        <div class="w-full text-center parrent-page"></div>
+                        <h1 class="text-xl text-center font-bold">Product</h1>
+                    </div>
+                </div>
+                <div class="background-ovelay"></div>
+            </div>
+        </div>
+
+        <div class="section-products section">
+            <div class="tab-container">
+                <div class="tab-headers">
+                    <div class="tab-header active" data-target-index="0">
+                        <span class="text-item font-bold">Classic Platform</span>
+                    </div>
+                    <div class="tab-header" data-target-index="1">
+                        <span class="text-item font-bold">Adaptive Platform</span>
+                    </div>
+                    <div class="tab-header" data-target-index="2">
+                        <span class="text-item font-bold">Flash Bootloader</span>
+                    </div>
+                    <div class="tab-header" data-target-index="3">
+                        <span class="text-item font-bold">Test Automation</span>
+                    </div>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-content active classic-platform two-sides-content" id="classic-platform">
+                        <div class="introduction">
+                            <b>MaaZ Classic AUTOSAR Software Platform</b> provides an advanced solution for the application software and ECU hardware. This reliable platform enables application software to be largely independent of any MCU and OEM, enabling its reuse for a variety of different ECU systems. With its highly reliable security and functional safety ASIL (Automotive Safety Integrity Level), MaaZ Classic Platform improves quality, maximizes efficiency, and shortens the controller development period.
+                        </div>
+                        <div class="grid grid-cols-2 items-center product bsw two-sides-content">
+                            <div class="products flex justify-center items-center flex-col left-side">
+                                <div class="product-name text-title">Basic Software (BSW)</div>
+                                <div class="product-description text-center">
+                                    MaaZ BSW provides a comprehensive AUTOSAR solution, including AUTOSAR R4-compliant basic software, which supports safety-critical ECUs. 
+                                </div>
+                                <a class="button" href="products/classic-platform/basic-software">
+                                    <div class="button-hover-background">
+                                        <div class="ellipse1"></div>
+                                        <div class="ellipse2"></div>
+                                        <div class="ellipse3"></div>
+                                    </div>
+                                    <div class="button-text">
+                                        Learn more
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-image right-side">
+                                <img src="/images/products/bsw-1.png" alt="basic software">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 items-center product studio two-sides-content">
+                            <div class="product-image left-side">
+                                <img src="/images/products/studio.png" alt="studio">
+                            </div>
+                            <div class="products flex justify-center items-center flex-col right-side">
+                                <div class="product-name text-title">Studio</div>
+                                <div class="product-description text-center">
+                                    Simply develop basic features, integrate them into your AUTOSAR ecosystem and optimize cost balance with our user-friendly, exclusive tools from AUTOSAR Studio. 
+                                </div>
+                                <a class="button" href="/products/classic-platform/studio">
+                                    <div class="button-hover-background">
+                                        <div class="ellipse1"></div>
+                                        <div class="ellipse2"></div>
+                                        <div class="ellipse3"></div>
+                                    </div>
+                                    <div class="button-text">
+                                        Learn more
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content adaptive-platform" id="adaptive-platform">
+                        <div class="introduction">
+                            <b>MaaZ Adaptive AUTOSAR Platform</b> is the solution for E/E architecture, built on high-performance controllers and based on the Adaptive AUTOSAR, providing support for interconnectivity and real-time updates. It provides the AUTOSAR Runtime environment for Adaptive Applications (ARA) and comprises an efficient development environment integrated with Eclipse. MaaZ Adaptive is applied to high-performance ECUs, such as in-vehicle application servers, automated driving, and infotainment systems. 
+                        </div>
+                        <div class="grid grid-cols-2 items-center product bsw two-sides-content">
+                            <div class="products flex justify-center items-center flex-col left-side">
+                                <div class="product-name text-title">Basic Software (BSW)</div>
+                                <div class="product-description text-center">
+                                    The ultimate software base for E/E architecture, built on high-performance controllers and based on Adaptive AUTOSAR SW platform.
+                                </div>
+                                <a class="button" href="product/adaptive-platform/bsw">
+                                    <div class="button-hover-background">
+                                        <div class="ellipse1"></div>
+                                        <div class="ellipse2"></div>
+                                        <div class="ellipse3"></div>
+                                    </div>
+                                    <div class="button-text">
+                                        Learn more
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-image right-side">
+                                <img src="/images/products/bsw-2.png" alt="basic software">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 items-center product studio two-sides-content">
+                            <div class="product-image left-side">
+                                <img src="/images/products/studio-2.png" alt="studio">
+                            </div>
+                            <div class="products flex justify-center items-center flex-col right-side">
+                                <div class="product-name text-title">Studio</div>
+                                <div class="product-description text-center">
+                                    The optimal tool for accelerating AUTOSAR Adaptive projects. MaaZ Adaptive Platform Studio provides you with dynamic reloading software components and user-friendly tools, allowing users to meet up with any updating requirement and enhancing your AUTOSAR Adaptive experience. 
+                                </div>
+                                <a class="button" href="/product/classic-platform/studio">
+                                    <div class="button-hover-background">
+                                        <div class="ellipse1"></div>
+                                        <div class="ellipse2"></div>
+                                        <div class="ellipse3"></div>
+                                    </div>
+                                    <div class="button-text">
+                                        Learn more
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content flashbooloader" id="flashbooloader">
+                        <div class="grid grid-cols-2 items-center product bsw two-sides-content">
+                            <div class="product-image left-side">
+                                <img src="/images/products/flashbooster.png" alt="basic software">
+                            </div>
+                            <div class="products flex justify-center items-center flex-col right-side">
+                                <div class="product-name text-title">Studio</div>
+                                <div class="product-description text-center">
+                                    MaaZ Flash Bootloader allows car makers to easily update the ECU during software development and add additional features for the application. Flash Bootloader helps you optimize costs and reduce efforts with a universal and compact solution for reprogramming ECUs quickly, efficiently, and securely. 
+                                </div>
+                                <a class="button" href="product/flashbooster">
+                                    <div class="button-hover-background">
+                                        <div class="ellipse1"></div>
+                                        <div class="ellipse2"></div>
+                                        <div class="ellipse3"></div>
+                                    </div>
+                                    <div class="button-text">
+                                        Learn more
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content test-automation" id="test-automation">
+                        <div class="grid grid-cols-2 items-center product bsw two-sides-content">
+                            <div class="product-image left-side">
+                                <img src="/images/products/test-automation-studio.png" alt="basic software">
+                            </div>
+                            <div class="products flex justify-center items-center flex-col right-side">
+                                <div class="product-name text-title">Studio</div>
+                                <div class="product-description text-center">
+                                    MaaZ Flash Bootloader allows car makers to easily update the ECU during software development and add additional features for the application. Flash Bootloader helps you optimize costs and reduce efforts with a universal and compact solution for reprogramming ECUs quickly, efficiently, and securely. 
+                                </div>
+                                <a class="button" href="product/test-automation/studio">
+                                    <div class="button-hover-background">
+                                        <div class="ellipse1"></div>
+                                        <div class="ellipse2"></div>
+                                        <div class="ellipse3"></div>
+                                    </div>
+                                    <div class="button-text">
+                                        Learn more
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div th:replace="components/fragments :: contact-us"> </div>
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>
