@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('product', 'Classic Platform - Basic Software')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Product')"> </header>
+    <div class="main">
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/product-banner.png" class="w-full" />
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper">
+                <div class="background">
+                    <div class="title">
+                        <div class="w-full text-center parrent-page">Adaptive platform</div>
+                        <h1 class="text-xl text-center font-bold">Studio</h1>
+                    </div>
+                </div>
+                <div class="background-ovelay"></div>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <div class="introduction pb-4">
+                <div class="image mb-10">
+                    <img src="/images/products/adaptive-platform-bsw-studio.png" alt="adaptive platform studio">
+                </div>
+                <div class="content mb-10 text-item">
+                    <p>
+                        The AUTOSAR Adaptive Platform is a future-proof basis for automotive ECUs. A key advantage of the new
+                        standard is the ability to develop ECU applications independently of one another in distributed work
+                        groups.
+                    </p>
+                    <br>
+                    <p>
+                        While the development of conventional ECUs was driven primarily by stringent real-time and safety
+                        requirements, today aspects such as updating and upgrading capability are primary considerations. These
+                        involve dynamic reloading of software components, the use of standard libraries – such as for image
+                        analysis -, self-learning of functions, and accelerated production cycles.
+                    </p>
+                    <br>
+                    <p>
+                        The AUTOSAR Adaptive Platform implements the AUTOSAR Runtime for Adaptive Applications (ARA). Two types
+                        of interfaces are available, services and APIs. The platform consists of functional clusters which are
+                        grouped in services and the Adaptive AUTOSAR Basis.
+                    </p>
+                    <p>
+                        Functional clusters:
+                    </p>
+                    <ul class="list-disc">
+                        <li>
+                            Assemble functionalities of the Adaptive Platform.
+                        </li>
+                        <li>
+                            Define clustering of requirements specification.
+                        </li>
+                        <li>
+                            Describe the behavior of software platform from an application and network perspective.
+                        </li>
+                    </ul>
+                    <p>
+                        However, they do not constrain the final SW design of the architecture implementing the Adaptive
+                        Platform.
+                    </p>
+                    <p>
+                        Functional clusters in AUTOSAR Adaptive Platform Basis have to have at least one instance per (virtual)
+                        machine while services may be distributed in the in-car network.
+                    </p>
+                    <p>
+                        In comparison to the AUTOSAR Classic Platform, the AUTOSAR Runtime Environment for the Adaptive Platform
+                        dynamically links services and clients during runtime.
+                    </p>
+                    <p>
+                        <br>
+                        MaaZ Adaptive Platform Studio is the optimal tool for accelerating AUTOSAR Adaptive projects. MaaZ
+                        Adaptive Platform Studio provides you with dynamic reloading software components and user-friendly
+                        tools, allowing users to meet any updating requirement and enhancing your AUTOSAR Adaptive experience.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+
+        <div class="section section-adaptive-bsw-architecture text-center pb-20">
+            <h2 class="text-lg gradient-text font-bold my-10">
+                MaaZ Architecture
+            </h2>
+            <div class="items-center mt-4 grid-500-1fr">
+                <div class="image-left mr-10">
+                    <img src="/images/products/adaptive-platform-bsw-architecture.png" alt="Adaptive Platform BSW Architecture">
+                </div>
+                <div class="content right-side">
+                    <ul class="text-left">
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Provide run-time environment, SW update capability, and embedded security.
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Compliant to AUTOSAR Adaptive Platform (19-11, 20-11).
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Support various OS (POSIX OS/Ubuntu/Other RTOS).
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Support various SoCs.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div th:replace="components/fragments :: contact-us"> </div>   
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>

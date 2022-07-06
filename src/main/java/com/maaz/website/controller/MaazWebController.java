@@ -63,5 +63,14 @@ public class MaazWebController {
     public String classicPlatformStudio(Model model, HttpSession session) {
         return "products/classicplatform-studio"; //view
     }
+    
+    @GetMapping(value = "products/adaptive-platform/basic-software")
+    public String adaptivePlatformBSW(Model model, HttpSession session) {
+        return "products/adaptiveplatforn-bsw"; //view
+    }
+    @GetMapping(value = "products/adaptive-platform/studio")
+    public String adaptivePlatformStudio(Model model, HttpSession session) {
+        return "products/adaptiveplatforn-studio"; //view
+    }
     //end
 }
