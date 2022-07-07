@@ -66,11 +66,20 @@ public class MaazWebController {
     
     @GetMapping(value = "products/adaptive-platform/basic-software")
     public String adaptivePlatformBSW(Model model, HttpSession session) {
-        return "products/adaptiveplatforn-bsw"; //view
+        return "products/adaptiveplatform-bsw"; //view
     }
     @GetMapping(value = "products/adaptive-platform/studio")
     public String adaptivePlatformStudio(Model model, HttpSession session) {
-        return "products/adaptiveplatforn-studio"; //view
+        return "products/adaptiveplatform-studio"; //view
+    }
+    @GetMapping(value = "products/flash-bootloader/studio")
+    public String flashBootloaderStudio(Model model, HttpSession session) {
+        return "products/flashbootloader-studio"; //view
+    }
+    
+    @GetMapping(value = "products/test-automation/studio")
+    public String testAutomationStudio(Model model, HttpSession session) {
+        return "products/testautomation-studio"; //view
     }
     //end
 }

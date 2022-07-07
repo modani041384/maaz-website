@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('product', 'Test Automation - Studio')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Product')"> </header>
+    <div class="main">
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/product-banner.png" class="w-full" />
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper">
+                <div class="background">
+                    <div class="title">
+                        <div class="w-full text-center parrent-page">Test Automation</div>
+                        <h1 class="text-xl text-center font-bold">Studio</h1>
+                    </div>
+                </div>
+                <div class="background-ovelay"></div>
+            </div>
+        </div>
+
+        <div class="product-details pb-10">
+            <div class="introduction pb-8 grid grid-cols-2 items-center">
+                <div class="left-side mr-4">
+                    <h2 class="font-bold text-title pb-4">Test Automation</h2>
+                    <div class="content mb-10 text-item">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    </div>
+                </div>
+                <div class="image ml-3">
+                    <img src="/images/products/test-automation-studio-introduce.png" alt="flash-bootloader studio">
+                </div>
+            </div>
+            <div class="introduction pb-4 grid grid-cols-2 items-center pt-8">
+                <div class="image mr-4">
+                    <img src="/images/products/test-automation-studio-core-feature.png" alt="flash-bootloader studio">
+                </div>
+                <div class="left-side ml-3">
+                    <h2 class="font-bold text-title pb-4">Core Features</h2>
+                    <div class="content mb-10 text-item">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div th:replace="components/fragments :: contact-us"> </div>   
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>
