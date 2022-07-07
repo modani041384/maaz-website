@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('product', 'Flash Bootloader - Studio')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Product')"> </header>
+    <div class="main">
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/product-banner.png" class="w-full" />
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper">
+                <div class="background">
+                    <div class="title">
+                        <div class="w-full text-center parrent-page">Flash Bootloader</div>
+                        <h1 class="text-xl text-center font-bold">Studio</h1>
+                    </div>
+                </div>
+                <div class="background-ovelay"></div>
+            </div>
+        </div>
+
+        <div class="product-details pb-10">
+            <div class="introduction pb-4 grid grid-cols-2">
+                <div class="left-side mr-4">
+                    <h2 class="font-bold text-title pb-4">Flash Bootloader</h2>
+                    <div class="content mb-10 text-item">
+                        Enhance your performance with MaaZ Flash Bootloader. As an official AUTOSAR partner for many years, we have extensive expertise in developing our secure Flash Bootloader, which is flexible to integrate and based on ISO specifications. 
+                    </div>
+                </div>
+                <div class="image ml-3">
+                    <img src="/images/products/flashbootloader-studio.png" alt="flash-bootloader studio">
+                </div>
+            </div>
+        </div>
+        <div class="section text-center pb-20">
+            <h2 class="text-lg gradient-text font-bold my-10">
+                MaaZ Architecture
+            </h2>
+            <div class="items-center mt-4 grid-500-1fr">
+                <div class="image-left mr-10">
+                    <img src="/images/products/flashbootloader-studio-architecture.png" alt="Flash Bootloader Architecture">
+                </div>
+                <div class="content right-side">
+                    <ul class="text-left">
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Based on ISO14229-1 UDS and ISO15765-2 Transport Protocols for CAN (CAN-FD) communication.
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Based on ISO 14229-1, ISO 14229-2, ISO14229-5 and ISO13400-2 for Ethernet communication.
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Easy to integrate with AUTOSAR ECU applications.
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Modular design for easy adaptation to bootloader specifications of various OEMs.
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                CAN ports - SPC57XX - NXP; RH850 - Renesas; TC27X - Infineon etc.
+                            </div>
+                        </li>
+                        <li class="flex items-start mb-1">
+                            <div class="slash-bullet"></div>
+                            <div class="flex-1 text-item">
+                                Ethernet ports - SPC57XX, S32K - NXP; RH850 - Renesas; TC2XX/TC3XX - Infineon; 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div th:replace="components/fragments :: contact-us"> </div>   
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>

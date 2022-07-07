@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head th:include="components/fragments :: headDeclaration('product', 'Classic Platform - Basic Software')"> </head>
+<head th:include="components/fragments :: headDeclaration('product', 'Adaptive Platform - Studio')"> </head>
 <body>
     <header th:replace="components/fragments :: header('Product')"> </header>
     <div class="main">
@@ -49,7 +49,7 @@
                     <p>
                         Functional clusters:
                     </p>
-                    <ul class="list-disc">
+                    <ul class="list-disc pl-8">
                         <li>
                             Assemble functionalities of the Adaptive Platform.
                         </li>
@@ -83,45 +83,6 @@
             </div>
         </div>
 
-        <div class="section section-adaptive-bsw-architecture text-center pb-20">
-            <h2 class="text-lg gradient-text font-bold my-10">
-                MaaZ Architecture
-            </h2>
-            <div class="items-center mt-4 grid-500-1fr">
-                <div class="image-left mr-10">
-                    <img src="/images/products/adaptive-platform-bsw-architecture.png" alt="Adaptive Platform BSW Architecture">
-                </div>
-                <div class="content right-side">
-                    <ul class="text-left">
-                        <li class="flex items-start mb-1">
-                            <div class="slash-bullet"></div>
-                            <div class="flex-1 text-item">
-                                Provide run-time environment, SW update capability, and embedded security.
-                            </div>
-                        </li>
-                        <li class="flex items-start mb-1">
-                            <div class="slash-bullet"></div>
-                            <div class="flex-1 text-item">
-                                Compliant to AUTOSAR Adaptive Platform (19-11, 20-11).
-                            </div>
-                        </li>
-                        <li class="flex items-start mb-1">
-                            <div class="slash-bullet"></div>
-                            <div class="flex-1 text-item">
-                                Support various OS (POSIX OS/Ubuntu/Other RTOS).
-                            </div>
-                        </li>
-                        <li class="flex items-start mb-1">
-                            <div class="slash-bullet"></div>
-                            <div class="flex-1 text-item">
-                                Support various SoCs.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
         <div th:replace="components/fragments :: contact-us"> </div>   
     </div>
     <div class="horizontal-line"/>
