@@ -1,0 +1,26 @@
+@import url(../component/components.css);
+
+.py-section,
+.pl-section {
+    padding-left: var(--section-padding);
+}
+
+.py-section,
+.pr-section {
+    padding-right: var(--section-padding);
+}
+
+.py-2section,
+.pl-2section {
+    padding-left: calc(2 * var(--section-padding));
+}
+
+.py-2section,
+.pr-2section {
+    padding-right: calc(2 * var(--section-padding));
+}
+
+.title-wrapper .subtitle{
+    margin-bottom: 3.5rem;
+    margin-top: 1rem;
+}

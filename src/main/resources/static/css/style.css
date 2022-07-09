@@ -82,6 +82,16 @@ footer {
     background: var(--bg);
 }
 
+.grid-1fr-500 {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+}
+
+.grid-500-1fr {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
 
 @media screen and (min-width: var(576px)) {
     :root {

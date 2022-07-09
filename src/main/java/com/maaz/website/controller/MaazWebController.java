@@ -81,5 +81,10 @@ public class MaazWebController {
     public String testAutomationStudio(Model model, HttpSession session) {
         return "products/testautomation-studio"; //view
     }
+    
+    @GetMapping(value = "services")
+    public String services(Model model, HttpSession session) {
+        return "services"; //view
+    }
     //end
 }

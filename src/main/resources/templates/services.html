@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:include="components/fragments :: headDeclaration('services', 'Services')"> </head>
+<body>
+    <header th:replace="components/fragments :: header('Services')"> </header>
+    <div class="main">
+        <div class="banner relative">
+            <div class="banner-background w-full">
+                <img src="/images/service-banner.png" class="w-full" />
+            </div>
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="page-title">
+            <div class="gradient-border-wrapper title-wrapper">
+                <div class="background">
+                    <div class="title">
+                        <div class="w-full text-center parrent-page"></div>
+                        <h1 class="text-xl text-center font-bold">Services</h1>
+                        <div class="text-item py-section subtitle text-center">
+                            Explore a full range of MaaZ services in 3 main aspects (Layer, Life Cycle & Process), 4 main platforms (MCAL Drivers, BSW Stack, SWC and Microcontrollers), along with our advanced safety and R&D tools.
+                        </div>
+                    </div>
+                </div>
+                <div class="background-ovelay"></div>
+            </div>
+        </div>
+
+        <div class="section-services section py-section">
+            <div class="tab-container">
+                <div class="tab-headers">
+                    <div class="tab-header active" data-target-index="0">
+                        <span class="text-item font-bold">Platform Development</span>
+                    </div>
+                    <div class="tab-header" data-target-index="1">
+                        <span class="text-item font-bold">Application Development</span>
+                    </div>
+                    <div class="tab-header" data-target-index="2">
+                        <span class="text-item font-bold">Safety and Security</span>
+                    </div>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-content active classic-platform two-sides-content" id="classic-platform">
+                        <div th:replace="components/services/platform-development-service :: content"> </div>   
+                    </div>
+
+                    <div class="tab-content adaptive-platform" id="adaptive-platform">
+                        Application Development
+                    </div>
+                    <div class="tab-content flashbooloader" id="flashbooloader">
+                        Safety and Security
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div th:replace="components/fragments :: contact-us"> </div>
+    </div>
+    <div class="horizontal-line"/>
+    <div th:replace="components/fragments :: footer"> </div>   
+    <div class="horizontal-line"/>
+</body>
