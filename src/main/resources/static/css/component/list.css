@@ -32,3 +32,7 @@ li.custom {
     background: linear-gradient(177.46deg, #FFFFFF 57.51%, #AFAFAF 87.85%);
     opacity: 0.4;
 }
+
+li {
+    list-style-position: inside;
+}

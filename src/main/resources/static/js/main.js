@@ -1,4 +1,5 @@
 import { Init } from "./tab.js";
+import { Accordion } from "./accordion.js";
 
 function configSwiper(params) {
     const thumbSwiper = new Swiper('.thumb-swiper', {
@@ -72,6 +73,10 @@ $(() => {
     
     let selectedTab = window.location.hash || '#';
     tabs.forEach(tab => tab.active({ index: 0, name: selectedTab.replace('#', '') }));
+    
+    var accordions = document.querySelectorAll('.accordion');
+    [...accordions].map(e => new Accordion(e));
+
     $(window).on('hashchange', function () {
         selectedTab = window.location.hash || '#';
         tabs.forEach(tab => tab.active({ index: 0, name: selectedTab.replace('#', '') }));

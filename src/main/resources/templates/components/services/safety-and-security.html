@@ -1,0 +1,29 @@
+<div th:fragment="content" class="py-4">
+    <div class="tab-container vertical-tab">
+        <div class="tab-headers">
+            <div class="tab-header active" data-target-index="0">
+                <span class="text-item font-bold">FuSa</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="1">
+                <span class="text-item font-bold">Security</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="2">
+                <span class="text-item font-bold">Aspice Fulfillment</span>
+                <div class="separater"></div>
+            </div>
+        </div>
+        <div class="tab-contents">
+            <div class="tab-content active fusa">
+                <div th:include="components/services/fusa :: content"> </div>   
+            </div>
+            <div class="tab-content security">
+                <div th:include="components/services/security :: content"> </div>   
+            </div>
+            <div class="tab-content aspice-fulfillment">
+                <div th:include="components/services/aspice-fulfillment :: content"> </div>   
+            </div>
+        </div>
+    </div>
+</div>
