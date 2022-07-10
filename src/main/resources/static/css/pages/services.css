@@ -24,3 +24,61 @@
     margin-bottom: 3.5rem;
     margin-top: 1rem;
 }
+
+.adas-feature {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.adas-feature:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.adas-feature:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.features-list .separater {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 20.08%, rgba(255, 255, 255, 0.6) 76.56%, rgba(255, 255, 255, 0) 100%);
+    height: 1px;
+    margin: 1rem 0;
+    width: 100%;
+}
+.ev-summaries .separater {
+    background: linear-gradient(90deg, rgba(77, 77, 77, 0) 0%, #FFFFFF 50.25%, rgba(77, 77, 77, 0) 100%);
+    height: 1px;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.adas-feature .image-container {
+    margin-right: 1rem;
+}
+
+.adas-feature .image-container .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adas-feature .content {
+    padding-left: 1rem;
+}
+
+.ev-summaries .summary {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    padding: 0.75rem 0;
+    align-items: center;
+}
+
+.ev-summaries .summary:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.ev-summaries .summary-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}

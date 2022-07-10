@@ -1,0 +1,57 @@
+<div th:fragment="content" class="py-4">
+    <div class="tab-container vertical-tab">
+        <div class="tab-headers">
+            <div class="tab-header active" data-target-index="0">
+                <span class="text-item font-bold">Cockpit</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="1">
+                <span class="text-item font-bold">ADAS & AD</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="2">
+                <span class="text-item font-bold">Connected Car</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="3">
+                <span class="text-item font-bold">EV</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="4">
+                <span class="text-item font-bold">Car Amplifer</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="5">
+                <span class="text-item font-bold">PowerTrain</span>
+                <div class="separater"></div>
+            </div>
+            <div class="tab-header" data-target-index="6">
+                <span class="text-item font-bold">Body Electronics</span>
+                <div class="separater"></div>
+            </div>
+        </div>
+        <div class="tab-contents">
+            <div class="tab-content active cockpit">
+                <div th:include="components/services/cockpit :: content"> </div>   
+            </div>
+            <div class="tab-content adas-and-ad">
+                <div th:include="components/services/adas-and-ad :: content"> </div>   
+            </div>
+            <div class="tab-content connected-car">
+                <div th:include="components/services/connected-car :: content"> </div>   
+            </div>
+            <div class="tab-content ev">
+                <div th:include="components/services/ev :: content"> </div>   
+            </div>
+            <div class="tab-content flashbooloader">
+                Car Amplifer
+            </div>
+            <div class="tab-content powertrain">
+                <div th:include="components/services/powertrain :: content"> </div>   
+            </div>
+            <div class="tab-content flashbooloader">
+                Body Electronics
+            </div>
+        </div>
+    </div>
+</div>

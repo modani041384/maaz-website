@@ -37,7 +37,7 @@ export class Content {
 export class Tab {
     constructor(element) {
         this.container = element;
-        var headers = element.querySelectorAll('.tab-header');
+        var headers = element.querySelectorAll(':scope > .tab-headers > .tab-header');
         this.headers = [...headers].map((e, index) => {
             let header = new TabHeader(e, index);
             header.onTabActive = (index) => {
@@ -45,7 +45,7 @@ export class Tab {
             }
             return header;
         });
-        var contents = element.querySelectorAll('.tab-content');
+        var contents = element.querySelectorAll(':scope > .tab-contents > .tab-content');
         this.contents = [...contents].map((e, index) => new Content(e, index));
     }
     active({index, name}) {
