@@ -243,7 +243,6 @@ li.flex .content {
 }
 
 .section-products .products-introduction {
-    background: linear-gradient(rgba(65, 65, 65, 1) 0%, rgba(26, 26, 26, 1) 12.37%, #040A10 73.72%);
     border-radius: 32px 32px 0px 0px;
     padding: 3.5rem;
 }

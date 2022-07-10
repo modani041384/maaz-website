@@ -40,7 +40,7 @@ public class MaazWebController {
         return "success-stories"; //view
     }
     
-    @GetMapping(value = "company/our-story")
+    @GetMapping(value = "company/about-us")
     public String ourStory(Model model, HttpSession session) {
         return "our-story"; //view
     }
@@ -48,6 +48,11 @@ public class MaazWebController {
     @GetMapping(value = "company/contact-us")
     public String contactUs(Model model, HttpSession session) {
         return "contact-us"; //view
+    }
+
+    @GetMapping(value = "company/news")
+    public String news(Model model, HttpSession session) {
+        return "whitepaper"; //view
     }
 
     @GetMapping(value = "products")

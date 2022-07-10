@@ -39,6 +39,9 @@ body {
     border-radius: 2rem 2rem 0px 0px;
 }
 
+.gradient-border-wrapper > .background {
+    background: #040A10;
+}
 .swiper .swiper-slide {
     height: auto;
 }
