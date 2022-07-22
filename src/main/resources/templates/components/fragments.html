@@ -18,10 +18,15 @@
 </div>
 <header th:fragment="header(currentPage)">
     <div class="header-container">
+        <button class="hamburger-menu sm:hidden block">
+            <span class="material-symbols-outlined icon">
+                menu
+            </span>
+        </button>
         <div class="logo">
             <img src="/images/logo-white-horizontal.png" alt="logo">
         </div>
-        <div class="navigation">
+        <div class="navigation sm:block hidden">
             <ul class="flex flex-row">
                 <li class="select" th:classappend="${currentPage == 'Home' ? 'selected' : ''}">
                     <a href="/home" class="menu-item flex">
@@ -140,7 +145,7 @@
                                 </div>
                                 <span>News</span>
                             </a>
-                            <a class="submenu-item" href="/contact-us">
+                            <a class="submenu-item" href="/company/contact-us">
                                 <div class="arrow">
                                     <img src="/images/arrow-forward.png" alt="arrow-forward">
                                 </div>
