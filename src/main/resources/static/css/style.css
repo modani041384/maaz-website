@@ -95,30 +95,3 @@ footer {
     display: grid;
     grid-template-columns: 500px 1fr;
 }
-
-
-@media screen and (min-width: var(576px)) {
-    :root {
-        --section-padding: 1rem;
-        --svg-padding: 1.2rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    :root {
-        --section-padding: 2rem;
-        --svg-padding: 2.3rem;
-    }
-}
-@media screen and (min-width: 992px) {
-    :root {
-        --section-padding: 5rem;
-        --svg-padding: 7.625rem
-    }
-}
-@media screen and (min-width: 1400px) {
-    :root {
-        --section-padding: 7.5rem;
-        --svg-padding: 12.375rem
-    }
-}

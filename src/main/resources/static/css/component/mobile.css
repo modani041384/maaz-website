@@ -1,0 +1,93 @@
+@import url(./variables.css);
+
+.menu-item .expand-less {
+    display: none;
+}
+.menu-item .flex-1{
+    display: block;
+}
+.submenu-container + .menu-item .arrow-down{
+    display: flex;
+    place-content: center;
+}
+
+@media screen and (max-width: 640.5px) {
+    header .header-container {
+        justify-content: start;
+    }
+    button.hamburger-menu {
+        background: transparent;
+        place-content: center;
+        display: flex;
+        padding: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .header-container .navigation {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: calc(100vh - 4rem);
+        left: -100%;
+        transition: 0.3s ease-in-out;
+        background: var(--bg);
+        overflow: auto;
+    }
+    .header-container .navigation.active {
+        left: 0;
+    }
+
+    .select.selected,
+    .select:hover, 
+    .select.selected:hover {
+        background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    }
+
+    .select.selected::after {
+        display: none;
+    }
+
+    .select.select.selected .menu-item .expand-more,
+    .select.select.expanded .menu-item .expand-more {
+        display: none;
+    }
+    .select.select.selected .menu-item .expand-less,
+    .select.select.expanded .menu-item .expand-less {
+        display: block;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.25rem 1.5rem;
+    }
+    .select .submenu-container {
+        display: block;
+        position: relative;
+        padding-bottom: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .select.selected .submenu-container {
+        max-height: 100%;
+    }
+
+    .select .menu-item {
+        padding: 0;
+    }
+
+    .select .submenu-container .select-submenu.level-2 {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .select .submenu-container .padding {
+        display: none;
+    }
+    .select-submenu.level-2 .submenu-item {
+        background: transparent;
+    }
+}

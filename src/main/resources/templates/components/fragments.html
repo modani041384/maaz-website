@@ -18,21 +18,27 @@
 </div>
 <header th:fragment="header(currentPage)">
     <div class="header-container">
-        <button class="hamburger-menu sm:hidden block">
-            <span class="material-symbols-outlined icon">
-                menu
-            </span>
-        </button>
-        <div class="logo">
+        <div class="logo flex sm:block">
+            
+            <button class="hamburger-menu sm:hidden block">
+                <span class="material-symbols-outlined icon">
+                    menu
+                </span>
+            </button>
             <img src="/images/logo-white-horizontal.png" alt="logo">
         </div>
-        <div class="navigation sm:block hidden">
-            <ul class="flex flex-row">
+        <div class="navigation">
+            <ul class="sm:flex flex-row">
                 <li class="select" th:classappend="${currentPage == 'Home' ? 'selected' : ''}">
                     <a href="/home" class="menu-item flex">
-                        <span class="flex-1">Home</span>
+                        <span class="sm:flex-1">Home</span>
                         <span class="arrow-down">
-                            <img width="16" height="16" src="/images/arrow-down.png">
+                            <span class="material-symbols-outlined expand-more">
+                                expand_more
+                            </span>
+                            <span class="material-symbols-outlined hidden expand-less">
+                                expand_less
+                            </span>
                         </span>
                     </a>
                 </li>
@@ -67,9 +73,14 @@
                         </ul>
                     </div>
                     <a href="/products" class="menu-item flex">
-                        <span class="flex-1">Products</span>
+                        <span class="sm:flex-1">Products</span>
                         <span class="arrow-down">
-                            <img width="16" height="16" src="/images/arrow-down.png">
+                            <span class="material-symbols-outlined expand-more">
+                                expand_more
+                            </span>
+                            <span class="material-symbols-outlined hidden expand-less">
+                                expand_less
+                            </span>
                         </span>
                     </a>
                 </li>
@@ -98,9 +109,14 @@
                         </ul>
                     </div>
                     <a href="/services" class="menu-item flex">
-                        <span class="flex-1">Services</span>
+                        <span class="sm:flex-1">Services</span>
                         <span class="arrow-down">
-                            <img width="16" height="16" src="/images/arrow-down.png">
+                            <span class="material-symbols-outlined expand-more">
+                                expand_more
+                            </span>
+                            <span class="material-symbols-outlined hidden expand-less">
+                                expand_less
+                            </span>
                         </span>
                     </a>
                 </li>
@@ -123,9 +139,14 @@
                         </ul>
                     </div>
                     <a href="/resources" class="menu-item flex">
-                        <span class="flex-1">Resources</span>
+                        <span class="sm:flex-1">Resources</span>
                         <span class="arrow-down">
-                            <img width="16" height="16" src="/images/arrow-down.png">
+                            <span class="material-symbols-outlined expand-more">
+                                expand_more
+                            </span>
+                            <span class="material-symbols-outlined hidden expand-less">
+                                expand_less
+                            </span>
                         </span>
                     </a>
                 </li>
@@ -154,9 +175,14 @@
                         </div>
                     </div>
                     <a href="/company/about-us" class="menu-item flex">
-                        <span class="flex-1">Company</span>
+                        <span class="sm:flex-1">Company</span>
                         <span class="arrow-down">
-                            <img width="16" height="16" src="/images/arrow-down.png">
+                            <span class="material-symbols-outlined expand-more">
+                                expand_more
+                            </span>
+                            <span class="material-symbols-outlined hidden expand-less">
+                                expand_less
+                            </span>
                         </span>
                     </a>
                 </li>

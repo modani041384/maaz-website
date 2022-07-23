@@ -1,5 +1,6 @@
 import { Init } from "./tab.js";
 import { Accordion } from "./accordion.js";
+import { Flyout } from "./flyout.js";
 
 function configSwiper(params) {
     const thumbSwiper = new Swiper('.thumb-swiper', {
@@ -65,10 +66,29 @@ function contactUs() {
     });
 }
 
+function configMenuItem () { 
+    $('body').on('click', '.mobile-active .menu-item', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const parent = $(this).parent('.select');
+        parent.toggleClass('expanded');
+        const subMenu = parent.find('.submenu-container');
+        if (subMenu.length === 0) {
+            return;
+        }
+        if (subMenu[0].style.maxHeight) {
+            subMenu[0].style.maxHeight = null;
+        } else {
+        subMenu[0].style.maxHeight = subMenu[0].scrollHeight + "px";
+        }
+    });
+}
+
 $(() => {
     configSwiper();
     configHover();
     contactUs();
+    configMenuItem();
     const tabs = Init();
     
     let selectedTab = window.location.hash || '#';
@@ -81,4 +101,5 @@ $(() => {
         selectedTab = window.location.hash || '#';
         tabs.forEach(tab => tab.active({ index: 0, name: selectedTab.replace('#', '') }));
     });
+    const flyout = new Flyout('.hamburger-menu', '.header-container .navigation');
 });
