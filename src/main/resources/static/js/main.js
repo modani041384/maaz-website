@@ -68,6 +68,9 @@ function contactUs() {
 
 function configMenuItem () { 
     $('body').on('click', '.mobile-active .menu-item', function (e) {
+        if (!(e.target.classList.contains('expand-more') || e.target.classList.contains('expand-less'))) {
+            return;
+        }
         e.preventDefault();
         e.stopPropagation();
         const parent = $(this).parent('.select');
